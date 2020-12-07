@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>open layers map</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{%static 'css/libs/v6.4.3-dist/ol.css' %}">
+
+    <script src="{%static 'css/libs/v6.4.3-dist/ol.js' %}"></script></head>
+<body>
+    <div class="grid-container">
+        <div class="grid1">
+            <div class="sidebar">
+                <h2>Choose Layer</h2>
+                <input type ="radio" name="layerbutotn" value="OSM_Standard" >OSM_Standard<br>
+                <input type ="radio" name="layerbutton" value="OSM_Humanitarian">OSM_Humanitarian<br>
+                <input type ="radio" name="layerbutton" value="Stamen_Terrain">Stamen_Terrain<br>
+            </div>
+        </div>
+        <div class="grid2">
+            <div id="jsmap" class="map"> hello</div>        
+        </div>
+        <div class="grid3">
+            
+        </div>
+    </div>
+    
+    {% load static %}
+    <script src="{%static 'css/main.js' %}"></script>
+    <script src="{%static 'css/libs/v6.4.3-dist/ol.js' %}"></script>
+</body>
+</html>
